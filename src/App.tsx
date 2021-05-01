@@ -1,26 +1,70 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import * as colors from "@material-ui/core/colors";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import 'fontsource-roboto';
+import GlobalMenu from './components/GlobalMenu';
+import WordPage from './pages/WordPage';
+import WordGrammerPage from './pages/WordGrammerPage';
+import GrammerPage from './pages/GrammerPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface AppProps {
+}
+
+interface AppState {
+  currentPage: pageNames
+}
+
+class App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props);
+    
+    this.state = {
+      currentPage: 'WordPage'
+    }
+  }
+
+  render () {
+    const theme = createMuiTheme({
+      palette: {
+        primary: {
+          main: colors.blue[800],
+        },
+        type: 'dark',
+      },
+    });
+
+    const changePage = (val: pageNames) => {
+      this.setState({
+        currentPage: val
+      })
+    }
+
+    return (
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        {
+          this.state.currentPage === 'WordPage'
+          &&
+          <WordPage />
+        }
+        {
+          this.state.currentPage === 'WordGrammerPage'
+          &&
+          <WordGrammerPage />
+        }
+        {
+          this.state.currentPage === 'GrammerPage'
+          &&
+          <GrammerPage />
+        }
+        <GlobalMenu
+            currentPage={this.state.currentPage}
+            changeCurrentPage= {(val) => changePage(val)}
+        />
+      </ThemeProvider>
+    );
+  }
 }
 
 export default App;
