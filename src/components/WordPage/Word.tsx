@@ -1,5 +1,8 @@
 import * as React from 'react';
-import { Container, Grid, Typography, TextField, Avatar } from '@material-ui/core';
+import { Container, Button, Grid, Typography, TextField, Avatar } from '@material-ui/core';
+import EnglishVoice from '../../lib/EnglishVoice';
+import VolumeUpIcon from '@material-ui/icons/VolumeUp';
+import TranslateIcon from '@material-ui/icons/Translate';
 
 interface WordProps {
   word: string;
@@ -52,19 +55,50 @@ class Word extends React.Component<WordProps, {}>{
               fullWidth={true}
               value={this.props.inputWordString}
               variant="outlined"
-              onChange={(o) => {
-                this.props.changeInputWord(o.target.value.toLowerCase());
-                if (this.props.word.toLowerCase() === o.target.value.toLowerCase()) {
-                  this.props.changeInputWordCompleted(true);
-                  this.props.viewWord();
-                } else {
-                  this.props.changeInputWordCompleted(false);
+              onChange={(o) =>
+                {
+                  this.props.changeInputWord(o.target.value.toLowerCase());
+                  if (this.props.word.toLowerCase() === o.target.value.toLowerCase()) {
+                    this.props.changeInputWordCompleted(true);
+                    this.props.viewWord();
+                    EnglishVoice.speech('OK.'+this.props.word, 'en-US', 1);
+                  } else {
+                    this.props.changeInputWordCompleted(false);
+                  }
                 }
-              }
               }
             />
           </Grid>
           <br />
+          <Grid
+            container
+            direction="row"
+            spacing={5}
+            justify="center"
+            alignItems="center"
+          >
+            <Grid item xs={5}>
+              <Button
+                style={style}
+                color="primary"
+                variant="outlined"
+                onClick={() => this.props.viewWord()}
+                >
+                  <TranslateIcon/>
+              </Button>
+            </Grid>
+            <Grid item xs={5}>
+              <Button
+                style={style}
+                variant="outlined"
+                onClick={() => {
+                  EnglishVoice.speech(this.props.word, 'en-US', 1);
+                }}
+              >
+                <VolumeUpIcon/>
+              </Button>
+            </Grid>
+          </Grid>
         </Container>
       </div>
     );
