@@ -4,6 +4,7 @@ import EnglishData from '../context/EnglishData';
 import Word from '../components/WordPage/Word';
 import Sentence from '../components/WordPage/Sentence';
 import Paginate from '../components/Pagination';
+import Part from '../components/Part';
 import SideMenu from '../components/SideMenu';
 
 const WordPage: React.FC<{}> = () => {
@@ -93,6 +94,10 @@ const WordPage: React.FC<{}> = () => {
             visibleSentence={visibleSentence}
             speechSpeedRate={speechSpeedRate}
             onClick = {() => setVisibleSentence('word-visible')}
+          />
+          <hr />
+          <Part
+            currentPart={currentPart}
           />
       </Container>
     </>
