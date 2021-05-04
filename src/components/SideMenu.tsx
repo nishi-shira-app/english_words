@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, IconButton, List, ListItem } from '@material-ui/core';
+import { Drawer, IconButton, List, ListItem, Slider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import { ListItemText, ListItemIcon } from '@material-ui/core';
@@ -11,6 +11,8 @@ interface SideMenuProps {
   parts: string[];
   currentPart: string;
   changeCurrentPart: (val:string) => void;
+  speechSpeedRate: number;
+  changeSpeechSpeedRate: (val:number) => void;
 }
 
 const SideMenu: React.FC<SideMenuProps> = props => {
@@ -73,6 +75,25 @@ const SideMenu: React.FC<SideMenuProps> = props => {
             }
           </List>
           <Divider />
+          <List component="nav" aria-label="thirdry speechSpeed">
+            <ListItem>
+              <Slider
+                min={0.1}
+                max={1}
+                step={0.1}
+                value={props.speechSpeedRate}
+                aria-labelledby="speech-speed-rate"
+                valueLabelDisplay="auto"
+                onChange={(e, v) => {
+                  let rate:number = props.speechSpeedRate;
+                  if (typeof(v) ===  'number') {
+                    rate = v;
+                  }
+                  props.changeSpeechSpeedRate(rate);
+                }}
+              />
+            </ListItem>
+          </List>
         </div>
       </Drawer>
       <MenuIcon />

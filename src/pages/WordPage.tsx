@@ -13,6 +13,7 @@ const WordPage: React.FC<{}> = () => {
   const [visibleSentence, setVisibleSentence] = useState<string>('word-hidden');
   const [isInputWordCompleted, setIsInputWordCompleted] = useState<boolean>(false);
   const [inputWordString, setInputWordString] = useState<string>('');
+  const [speechSpeedRate, setSpeechSpeedRate] = useState<number>(0.8);
 
   const changeInputWordCompleted = (val: boolean) => {
     setIsInputWordCompleted(val);
@@ -34,6 +35,10 @@ const WordPage: React.FC<{}> = () => {
       }
   }
 
+  const changeSpeechSpeedRate = (val: number) => {
+    setSpeechSpeedRate(val);
+  }
+
   return (
     <>
       <Container maxWidth="sm">
@@ -41,6 +46,8 @@ const WordPage: React.FC<{}> = () => {
           parts={EnglishData.getParts()}
           currentPart={currentPart}
           changeCurrentPart={(val) => changeCurrentPart(val)}
+          speechSpeedRate={speechSpeedRate}
+          changeSpeechSpeedRate={(val) => changeSpeechSpeedRate(val)}
         />
         <Word
           word={slides[wordIndex].word}
@@ -58,7 +65,7 @@ const WordPage: React.FC<{}> = () => {
             sentence={slides[wordIndex].sentence}
             trans={slides[wordIndex].sentenceTrans}
             visibleSentence={visibleSentence}
-            speechSpeedRate={1}
+            speechSpeedRate={speechSpeedRate}
             onClick = {() => setVisibleSentence('word-visible')}
           />
       </Container>
