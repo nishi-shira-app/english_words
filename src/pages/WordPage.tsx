@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container } from '@material-ui/core';
 import EnglishData from '../context/EnglishData';
 import Word from '../components/WordPage/Word';
+import Sentence from '../components/WordPage/Sentence';
 import SideMenu from '../components/SideMenu';
 
 const WordPage: React.FC<{}> = () => {
@@ -9,6 +10,7 @@ const WordPage: React.FC<{}> = () => {
   const [wordIndex, setWordIndex] = useState<number>(0);
   const [visibleWord, setVisibleWord] = useState<string>('word-hidden');
   const [currentPart, setCurrentPart] = useState<string>(EnglishData.getFirstPart());
+  const [visibleSentence, setVisibleSentence] = useState<string>('word-hidden');
   const [isInputWordCompleted, setIsInputWordCompleted] = useState<boolean>(false);
   const [inputWordString, setInputWordString] = useState<string>('');
 
@@ -52,6 +54,13 @@ const WordPage: React.FC<{}> = () => {
           changeInputWord={(val) => changeInputWord(val)}
         />
         <hr />
+          <Sentence
+            sentence={slides[wordIndex].sentence}
+            trans={slides[wordIndex].sentenceTrans}
+            visibleSentence={visibleSentence}
+            speechSpeedRate={1}
+            onClick = {() => setVisibleSentence('word-visible')}
+          />
       </Container>
     </>
   )
