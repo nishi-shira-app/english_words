@@ -3,6 +3,7 @@ import { Container } from '@material-ui/core';
 import EnglishData from '../context/EnglishData';
 import Word from '../components/WordPage/Word';
 import Sentence from '../components/WordPage/Sentence';
+import Paginate from '../components/Pagination';
 import SideMenu from '../components/SideMenu';
 
 const WordPage: React.FC<{}> = () => {
@@ -14,6 +15,26 @@ const WordPage: React.FC<{}> = () => {
   const [isInputWordCompleted, setIsInputWordCompleted] = useState<boolean>(false);
   const [inputWordString, setInputWordString] = useState<string>('');
   const [speechSpeedRate, setSpeechSpeedRate] = useState<number>(0.8);
+
+  const slidePrev = () => {
+    if (wordIndex > 0) {
+      setWordIndex(wordIndex - 1);
+      setVisibleWord('word-hidden');
+      setVisibleSentence('word-hidden');
+      setIsInputWordCompleted(false);
+      setInputWordString('');
+    }
+  }
+
+  const slideNext = () => {
+    if (wordIndex < slides.length-1) {
+      setWordIndex(wordIndex + 1);
+      setVisibleWord('word-hidden');
+      setVisibleSentence('word-hidden');
+      setIsInputWordCompleted(false);
+      setInputWordString('');
+    }
+  }
 
   const changeInputWordCompleted = (val: boolean) => {
     setIsInputWordCompleted(val);
@@ -49,6 +70,11 @@ const WordPage: React.FC<{}> = () => {
           speechSpeedRate={speechSpeedRate}
           changeSpeechSpeedRate={(val) => changeSpeechSpeedRate(val)}
         />
+        <Paginate
+          onClickPrev={slidePrev}
+          onClickNext={slideNext}
+        />
+        <hr/>
         <Word
           word={slides[wordIndex].word}
           partOfSpeech={slides[wordIndex].partOfSpeech}

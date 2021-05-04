@@ -35,7 +35,24 @@ export default class EnglishData {
       "trans": "名前",
       "sentence": "My name is Ken.",
       "sentenceTrans": "私の名前はケンです。"
+    },
+    {
+      "id": "3",
+      "part": "part001",
+      "word": "is",
+      "partOfSpeech": "動詞",
+      "trans": "です",
+      "sentence": "This is a pen.",
+      "sentenceTrans": "これはペンです。"
+    },
+    {
+      "id": "4",
+      "part": "part002",
+      "word": "My",
+      "partOfSpeech": "代名詞",
+      "trans": "私の",
+      "sentence": "My name is Ken.",
+      "sentenceTrans": "私の名前はケンです。"
     }
-
   ];
 }
