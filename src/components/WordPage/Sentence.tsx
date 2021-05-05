@@ -9,9 +9,9 @@ import 'fontsource-roboto';
 
 
 interface SentenceProps {
-    word: string;
+    sentence: string;
     trans: string;
-    visibleTrans: string;
+    visibleSentence: string;
     speechSpeedRate: number;
     onClick: () => void;
 }
@@ -32,10 +32,10 @@ class Sentence extends React.Component<SentenceProps, {}>{
           </div>
           <Typography component="div">
             <Box
-              className={this.props.visibleTrans}
+              className={this.props.visibleSentence}
               m={1}
             >
-              {this.props.word}
+              {this.props.sentence}
             </Box>
           </Typography>
           <Grid
@@ -62,7 +62,7 @@ class Sentence extends React.Component<SentenceProps, {}>{
                 style={style}
                 variant="outlined"
                 onClick={() => {
-                  EnglishVoice.speech(this.props.word, 'en-US', this.props.speechSpeedRate);
+                  EnglishVoice.speech(this.props.sentence, 'en-US', this.props.speechSpeedRate);
                 }}
               >
                 <VolumeUpIcon

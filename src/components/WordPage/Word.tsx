@@ -9,7 +9,7 @@ interface WordProps {
     word: string;
     partOfSpeech: string;
     trans: string;
-    visibleTrans: string;
+    visibleWord: string;
     isInputWordCompleted: boolean;
     inputWordString:string;
     onClick: () => void;
@@ -45,7 +45,7 @@ class Word extends React.Component<WordProps, {}>{
               </Avatar>
             </Grid>
           </Grid>
-          <Typography variant='h4' className={this.props.visibleTrans}>
+          <Typography variant='h4' className={this.props.visibleWord}>
             {this.props.word}
           </Typography>
           <br/>
@@ -62,7 +62,7 @@ class Word extends React.Component<WordProps, {}>{
                   if (this.props.word.toLowerCase() === o.target.value.toLowerCase()) {
                     this.props.changeInputWordCompleted(true);
                     this.props.onClick();
-                    EnglishVoice.speech('OK.'+this.props.word, 'en-US', 1);
+                    EnglishVoice.speech('OK. '+this.props.word, 'en-US', 1);
                   } else {
                     this.props.changeInputWordCompleted(false);
                   }

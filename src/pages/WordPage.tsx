@@ -10,9 +10,9 @@ import SideMenu from '../components/SideMenu';
 const WordPage: React.FC<{}> = () => {
     const [slides, setSlides] = useState(EnglishData.WORDS.filter(w => w.part === EnglishData.getFirstPart()));
     const [wordIndex, setWordIndex] = useState<number>(0);
-    const [visibleTrans, setVisibleTrans] = useState<string>('translate-hidden');
-    const [currentPart, setCurrentPart] = useState<string>('toeic001');
-    const [visibleSentenceTrans, setVisibleSentenceTrans] = useState<string>('translate-hidden');
+    const [visibleWord, setVisibleWord] = useState<string>('word-hidden');
+    const [currentPart, setCurrentPart] = useState<string>(EnglishData.getFirstPart());
+    const [visibleSentence, setVisibleSentence] = useState<string>('word-hidden');
     const [isInputWordCompleted, setIsInputWordCompleted] = useState<boolean>(false);
     const [inputWordString, setInputWordString] = useState<string>('');
     const [speechSpeedRate, setSpeechSpeedRate] = useState<number>(0.8);
@@ -20,8 +20,8 @@ const WordPage: React.FC<{}> = () => {
     const slidePrev = () => {
       if (wordIndex > 0) {
         setWordIndex(wordIndex - 1);
-        setVisibleTrans('translate-hidden');
-        setVisibleSentenceTrans('translate-hidden');
+        setVisibleWord('word-hidden');
+        setVisibleSentence('word-hidden');
         setIsInputWordCompleted(false);
         setInputWordString('');
       }
@@ -30,8 +30,8 @@ const WordPage: React.FC<{}> = () => {
     const slideNext = () => {
       if (wordIndex < slides.length-1) {
         setWordIndex(wordIndex + 1);
-        setVisibleTrans('translate-hidden');
-        setVisibleSentenceTrans('translate-hidden');
+        setVisibleWord('word-hidden');
+        setVisibleSentence('word-hidden');
         setIsInputWordCompleted(false);
         setInputWordString('');
       }
@@ -51,17 +51,17 @@ const WordPage: React.FC<{}> = () => {
           setSlides(s)
           setCurrentPart(val);
           setWordIndex(0);
-          setVisibleTrans('translate-hidden');
-          setVisibleSentenceTrans('translate-hidden');
+          setVisibleWord('word-hidden');
+          setVisibleSentence('word-hidden');
           setIsInputWordCompleted(false);
           setInputWordString('');
-          }
+        }
     }
 
     const changeSpeechSpeedRate = (val: number) => {
       setSpeechSpeedRate(val);
     }
-  
+
     return (
       <>
         <SideMenu
@@ -81,20 +81,20 @@ const WordPage: React.FC<{}> = () => {
             word={slides[wordIndex].word}
             partOfSpeech={slides[wordIndex].partOfSpeech}
             trans={slides[wordIndex].trans}
-            visibleTrans = {visibleTrans}
+            visibleWord = {visibleWord}
             isInputWordCompleted={isInputWordCompleted}
             inputWordString={inputWordString}
-            onClick={() => setVisibleTrans('translate-visible')}
+            onClick={() => setVisibleWord('word-visible')}
             changeInputWordCompleted={(val) => changeInputWordCompleted(val)}
             changeInputWord={(val) => changeInputWord(val)}
           />
           <hr/>
           <Sentence
-            word={slides[wordIndex].sentence}
+            sentence={slides[wordIndex].sentence}
             trans={slides[wordIndex].sentenceTrans}
-            visibleTrans={visibleSentenceTrans}
+            visibleSentence={visibleSentence}
             speechSpeedRate={speechSpeedRate}
-            onClick = {() => setVisibleSentenceTrans('translate-visible')}
+            onClick = {() => setVisibleSentence('word-visible')}
           />
           <hr/>
           <Part
