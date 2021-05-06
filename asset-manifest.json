@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/english_words/static/css/main.c0ec0cef.chunk.css",
-    "main.js": "/english_words/static/js/main.1556a06c.chunk.js",
-    "main.js.map": "/english_words/static/js/main.1556a06c.chunk.js.map",
+    "main.css": "/english_words/static/css/main.437023b1.chunk.css",
+    "main.js": "/english_words/static/js/main.50b2122e.chunk.js",
+    "main.js.map": "/english_words/static/js/main.50b2122e.chunk.js.map",
     "runtime-main.js": "/english_words/static/js/runtime-main.602f44c9.js",
     "runtime-main.js.map": "/english_words/static/js/runtime-main.602f44c9.js.map",
     "static/css/2.99689ad1.chunk.css": "/english_words/static/css/2.99689ad1.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.9f4bf84e.chunk.js.map": "/english_words/static/js/3.9f4bf84e.chunk.js.map",
     "index.html": "/english_words/index.html",
     "static/css/2.99689ad1.chunk.css.map": "/english_words/static/css/2.99689ad1.chunk.css.map",
-    "static/css/main.c0ec0cef.chunk.css.map": "/english_words/static/css/main.c0ec0cef.chunk.css.map",
+    "static/css/main.437023b1.chunk.css.map": "/english_words/static/css/main.437023b1.chunk.css.map",
     "static/js/2.017333ab.chunk.js.LICENSE.txt": "/english_words/static/js/2.017333ab.chunk.js.LICENSE.txt",
     "static/media/index.css": "/english_words/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.602f44c9.js",
     "static/css/2.99689ad1.chunk.css",
     "static/js/2.017333ab.chunk.js",
-    "static/css/main.c0ec0cef.chunk.css",
-    "static/js/main.1556a06c.chunk.js"
+    "static/css/main.437023b1.chunk.css",
+    "static/js/main.50b2122e.chunk.js"
   ]
 }
