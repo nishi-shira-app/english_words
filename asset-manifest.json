@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/english_words/static/css/main.437023b1.chunk.css",
-    "main.js": "/english_words/static/js/main.ce5779d4.chunk.js",
-    "main.js.map": "/english_words/static/js/main.ce5779d4.chunk.js.map",
-    "runtime-main.js": "/english_words/static/js/runtime-main.602f44c9.js",
-    "runtime-main.js.map": "/english_words/static/js/runtime-main.602f44c9.js.map",
+    "main.js": "/english_words/static/js/main.28d999a3.chunk.js",
+    "main.js.map": "/english_words/static/js/main.28d999a3.chunk.js.map",
+    "runtime-main.js": "/english_words/static/js/runtime-main.cb1c24da.js",
+    "runtime-main.js.map": "/english_words/static/js/runtime-main.cb1c24da.js.map",
     "static/css/2.99689ad1.chunk.css": "/english_words/static/css/2.99689ad1.chunk.css",
-    "static/js/2.6ad2e8d1.chunk.js": "/english_words/static/js/2.6ad2e8d1.chunk.js",
-    "static/js/2.6ad2e8d1.chunk.js.map": "/english_words/static/js/2.6ad2e8d1.chunk.js.map",
-    "static/js/3.9f4bf84e.chunk.js": "/english_words/static/js/3.9f4bf84e.chunk.js",
-    "static/js/3.9f4bf84e.chunk.js.map": "/english_words/static/js/3.9f4bf84e.chunk.js.map",
+    "static/js/2.a4d258ca.chunk.js": "/english_words/static/js/2.a4d258ca.chunk.js",
+    "static/js/2.a4d258ca.chunk.js.map": "/english_words/static/js/2.a4d258ca.chunk.js.map",
+    "static/js/3.2b54d7a2.chunk.js": "/english_words/static/js/3.2b54d7a2.chunk.js",
+    "static/js/3.2b54d7a2.chunk.js.map": "/english_words/static/js/3.2b54d7a2.chunk.js.map",
     "index.html": "/english_words/index.html",
     "static/css/2.99689ad1.chunk.css.map": "/english_words/static/css/2.99689ad1.chunk.css.map",
     "static/css/main.437023b1.chunk.css.map": "/english_words/static/css/main.437023b1.chunk.css.map",
-    "static/js/2.6ad2e8d1.chunk.js.LICENSE.txt": "/english_words/static/js/2.6ad2e8d1.chunk.js.LICENSE.txt",
+    "static/js/2.a4d258ca.chunk.js.LICENSE.txt": "/english_words/static/js/2.a4d258ca.chunk.js.LICENSE.txt",
     "static/media/index.css": "/english_words/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.602f44c9.js",
+    "static/js/runtime-main.cb1c24da.js",
     "static/css/2.99689ad1.chunk.css",
-    "static/js/2.6ad2e8d1.chunk.js",
+    "static/js/2.a4d258ca.chunk.js",
     "static/css/main.437023b1.chunk.css",
-    "static/js/main.ce5779d4.chunk.js"
+    "static/js/main.28d999a3.chunk.js"
   ]
 }
