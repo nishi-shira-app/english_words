@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/english_words/static/css/main.a8232838.chunk.css",
-    "main.js": "/english_words/static/js/main.351b6f33.chunk.js",
-    "main.js.map": "/english_words/static/js/main.351b6f33.chunk.js.map",
+    "main.js": "/english_words/static/js/main.10d1639d.chunk.js",
+    "main.js.map": "/english_words/static/js/main.10d1639d.chunk.js.map",
     "runtime-main.js": "/english_words/static/js/runtime-main.bc75cba4.js",
     "runtime-main.js.map": "/english_words/static/js/runtime-main.bc75cba4.js.map",
     "static/css/2.99689ad1.chunk.css": "/english_words/static/css/2.99689ad1.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.99689ad1.chunk.css",
     "static/js/2.0f2472bf.chunk.js",
     "static/css/main.a8232838.chunk.css",
-    "static/js/main.351b6f33.chunk.js"
+    "static/js/main.10d1639d.chunk.js"
   ]
 }
