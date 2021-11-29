@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/english_words/static/css/main.a8232838.chunk.css",
-    "main.js": "/english_words/static/js/main.2df62a23.chunk.js",
-    "main.js.map": "/english_words/static/js/main.2df62a23.chunk.js.map",
+    "main.js": "/english_words/static/js/main.24acbc5a.chunk.js",
+    "main.js.map": "/english_words/static/js/main.24acbc5a.chunk.js.map",
     "runtime-main.js": "/english_words/static/js/runtime-main.8bed525a.js",
     "runtime-main.js.map": "/english_words/static/js/runtime-main.8bed525a.js.map",
     "static/css/2.99689ad1.chunk.css": "/english_words/static/css/2.99689ad1.chunk.css",
-    "static/js/2.f2a0c229.chunk.js": "/english_words/static/js/2.f2a0c229.chunk.js",
-    "static/js/2.f2a0c229.chunk.js.map": "/english_words/static/js/2.f2a0c229.chunk.js.map",
+    "static/js/2.a2a491bf.chunk.js": "/english_words/static/js/2.a2a491bf.chunk.js",
+    "static/js/2.a2a491bf.chunk.js.map": "/english_words/static/js/2.a2a491bf.chunk.js.map",
     "static/js/3.51f1ed28.chunk.js": "/english_words/static/js/3.51f1ed28.chunk.js",
     "static/js/3.51f1ed28.chunk.js.map": "/english_words/static/js/3.51f1ed28.chunk.js.map",
     "index.html": "/english_words/index.html",
     "static/css/2.99689ad1.chunk.css.map": "/english_words/static/css/2.99689ad1.chunk.css.map",
     "static/css/main.a8232838.chunk.css.map": "/english_words/static/css/main.a8232838.chunk.css.map",
-    "static/js/2.f2a0c229.chunk.js.LICENSE.txt": "/english_words/static/js/2.f2a0c229.chunk.js.LICENSE.txt",
+    "static/js/2.a2a491bf.chunk.js.LICENSE.txt": "/english_words/static/js/2.a2a491bf.chunk.js.LICENSE.txt",
     "static/media/index.css": "/english_words/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.8bed525a.js",
     "static/css/2.99689ad1.chunk.css",
-    "static/js/2.f2a0c229.chunk.js",
+    "static/js/2.a2a491bf.chunk.js",
     "static/css/main.a8232838.chunk.css",
-    "static/js/main.2df62a23.chunk.js"
+    "static/js/main.24acbc5a.chunk.js"
   ]
 }
