@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/social_studies/static/css/main.a8232838.chunk.css",
-    "main.js": "/social_studies/static/js/main.5afbde6d.chunk.js",
-    "main.js.map": "/social_studies/static/js/main.5afbde6d.chunk.js.map",
-    "runtime-main.js": "/social_studies/static/js/runtime-main.5a7d3edd.js",
-    "runtime-main.js.map": "/social_studies/static/js/runtime-main.5a7d3edd.js.map",
-    "static/css/2.fc9440de.chunk.css": "/social_studies/static/css/2.fc9440de.chunk.css",
-    "static/js/2.39c5e60b.chunk.js": "/social_studies/static/js/2.39c5e60b.chunk.js",
-    "static/js/2.39c5e60b.chunk.js.map": "/social_studies/static/js/2.39c5e60b.chunk.js.map",
-    "static/js/3.cef215d5.chunk.js": "/social_studies/static/js/3.cef215d5.chunk.js",
-    "static/js/3.cef215d5.chunk.js.map": "/social_studies/static/js/3.cef215d5.chunk.js.map",
-    "index.html": "/social_studies/index.html",
-    "static/css/2.fc9440de.chunk.css.map": "/social_studies/static/css/2.fc9440de.chunk.css.map",
-    "static/css/main.a8232838.chunk.css.map": "/social_studies/static/css/main.a8232838.chunk.css.map",
-    "static/js/2.39c5e60b.chunk.js.LICENSE.txt": "/social_studies/static/js/2.39c5e60b.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/social_studies/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
+    "main.css": "/english_words/static/css/main.a8232838.chunk.css",
+    "main.js": "/english_words/static/js/main.a829d862.chunk.js",
+    "main.js.map": "/english_words/static/js/main.a829d862.chunk.js.map",
+    "runtime-main.js": "/english_words/static/js/runtime-main.1b5537bb.js",
+    "runtime-main.js.map": "/english_words/static/js/runtime-main.1b5537bb.js.map",
+    "static/css/2.99689ad1.chunk.css": "/english_words/static/css/2.99689ad1.chunk.css",
+    "static/js/2.64d0d3c8.chunk.js": "/english_words/static/js/2.64d0d3c8.chunk.js",
+    "static/js/2.64d0d3c8.chunk.js.map": "/english_words/static/js/2.64d0d3c8.chunk.js.map",
+    "static/js/3.e707bc43.chunk.js": "/english_words/static/js/3.e707bc43.chunk.js",
+    "static/js/3.e707bc43.chunk.js.map": "/english_words/static/js/3.e707bc43.chunk.js.map",
+    "index.html": "/english_words/index.html",
+    "static/css/2.99689ad1.chunk.css.map": "/english_words/static/css/2.99689ad1.chunk.css.map",
+    "static/css/main.a8232838.chunk.css.map": "/english_words/static/css/main.a8232838.chunk.css.map",
+    "static/js/2.64d0d3c8.chunk.js.LICENSE.txt": "/english_words/static/js/2.64d0d3c8.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/english_words/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a7d3edd.js",
-    "static/css/2.fc9440de.chunk.css",
-    "static/js/2.39c5e60b.chunk.js",
+    "static/js/runtime-main.1b5537bb.js",
+    "static/css/2.99689ad1.chunk.css",
+    "static/js/2.64d0d3c8.chunk.js",
     "static/css/main.a8232838.chunk.css",
-    "static/js/main.5afbde6d.chunk.js"
+    "static/js/main.a829d862.chunk.js"
   ]
 }
